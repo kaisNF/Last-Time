@@ -1,0 +1,562 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header{
+  background: #dfdfdf;
+}
+#colorP{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.bioContainer{
+  display: inline-flex;
+  padding: 1.2rem;
+  
+  background-color: #e07c4e54;
+}
+
+#para1{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin: 0.5rem;
+  width: 33%;
+}
+#para2{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin: 0.5rem;
+  width: 33%;
+  
+}
+#para3{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin: 0.5rem;
+  width: 33%;
+  
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+  background: #dfdfdf;
+}
+
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1{
+  font-family: myfont;
+  text-align: center;
+  color: #1F1A38;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  font-size: 2rem;
+  background-color: #e07c4e;
+  display: inline-flexbox;
+  color: #1F1A38;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  
+  margin-top: 2rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+.use{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.font1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+.font3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+
+.font4{
+  font-family: myfont;
+  font-size: 2.5rem;
+}
+
+.serv{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+
+.nav_menu{
+  position: relative;
+ 
+}
+.nav_menu a{
+  color: #aaaaaa;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #1f1a38;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  color:#ffffff;
+  background-color: #7b506f;
+
+}
+#customer{
+  color: #7b506f;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color:#ffffff;
+  background-color: #7b506f;
+}
+/* I have used https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive example to get the responsivness and alignment of the images */
+div.gallery {
+  border: 1rem solid #7b506f;
+}
+
+div.gallery:hover  {
+  border: 1rem solid #f7996e;
+  transition-property: background-color; 
+  transition: all 0.5s ease-in-out;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0.2rem;
+  width: 25%;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    width: 70%;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .responsive {
+    width: 70%;
+  }
+}
+
+
+
+
+
+/* 
+  INPUT STYLING -------------------
+*/
+/* Source https://freefrontend.com/css-input-text/ */
+div.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content:flex-start;
+	margin-top: 2rem;
+	border: 1rem solid #7b506f3e;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+h4.title {
+	text-align: center;
+	margin-bottom: 45px;
+}
+:root {
+	--color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--color-interaction: #7b506f;
+	--color-interaction-minus-two: rgba(4, 83, 201, 0.12);
+	--color-ink-high-contrast: #121212;
+
+	
+}
+div.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20rem;
+}
+
+/* Input and borders*/
+.input-underlined > input,
+.input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.input-underlined > input:focus,
+.input-filled > input:focus {
+	outline: none;
+}
+
+.input-underlined > .input-label,
+.input-filled > .input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 1%;
+	color: var(--color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+/* Changes the color of the box when hovered over */
+.input-underlined > input:hover,
+.input-filled > input:hover {
+	background: var(--color-interaction-minus-two);
+	border-color: var(--color-ink-high-contrast);
+}
+/* Maked the label animate to the top and when written on it it will stay up*/
+.input-underlined > input:focus + .input-label,
+.input-underlined > input:valid + .input-label,
+.-input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+/* Changing the color of the label when clicked */
+input:focus + .input-label {
+	color: var(--color-interaction);
+}
+/* Chaning the color of the underline when clicked */
+.input-underlined > input:focus{
+	border-color: var(--color-interaction);
+}
+/* 
+  RADIO INPUT STYLING -------------------
+*/
+
+/* section */
+#Rsection {
+  width: 30%;
+  min-height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.light {
+  --primary: #7b506f;
+  --other: hsl(0, 0%, 14%);
+
+  background: hsl(0, 0%, 98%);
+}
+
+
+
+/* h1 */
+#payment_M {
+  color: var(--other);
+  padding: 8px 4px;
+  border-bottom: 2px solid var(--other);
+}
+
+
+/* label */
+#Rlabel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 1rem 0;
+
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* input */
+#Rinput {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  
+}
+
+
+/* .design */
+/* Outer Dot */
+.design {
+  width: 1rem;
+  height: 1rem;
+
+  border: 1px solid var(--other);
+  border-radius: 100%;
+  margin-right: 16px;
+
+  position: relative;
+}
+/* Inner dot */
+.design::before,
+.design::after {
+  content: "";
+  display: block;
+
+  width: inherit;
+  height: inherit;
+
+  border-radius: inherit;
+
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center center;
+}
+
+.design:before {
+  background: var(--other);
+  opacity: 0;
+  transition: .3s;
+}
+
+.design::after {
+  background: var(--primary);
+  opacity: .4;
+  transition: .6s;
+}
+
+
+/* .text */
+.text {
+  color: var(--other);
+  font-weight: bold;
+}
+
+
+/* checked state */
+#Rinput:checked+.design::before {
+  opacity: 1;
+  transform: scale(.6);
+}
+
+
+/* other states */
+#Rinput:hover+.design,
+#Rinput:focus+.design {
+  border: 1px solid var(--primary);
+}
+
+#Rinput:hover+.design:before,
+#Rinput:focus+.design:before {
+  background: var(--primary);
+}
+
+#Rinput:hover~.text {
+  color: var(--primary);
+}
+
+#Rinput:focus+.design::after,
+#Rinput:active+.design::after {
+  opacity: .1;
+  transform: scale(2.6);
+}
+
+/* 
+  ------------ PRODUCT LIST -------------------
+*/
+/* Source of where the information was driven from https://www.youtube.com/watch?v=QRHjKAq4x3I&ab_channel=FiraCloudTech  */
+.product_list{
+  background-color:#e07c4e70 ;
+  padding: 3em;
+}
+.product_list .cart{
+  background: #e07c4e;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 10px 5px #1f1a3846;
+  text-align: center;
+
+}
+.cart .Ptitle{
+  font-family: myfont;
+  color: #1F1A38;
+  font-size: 2.3rem;
+  font-weight: bold;
+
+}
+.cart img{
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px #1f1a3846;
+}
+.cart .Ptext{
+  color: #1F1A38;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/*--------- CHECKOUT SECTION CSS--------- */
+/* Source driven from https://www.youtube.com/watch?v=cce_70pxbqw&ab_channel=Mr.WebDesigner */
+.checkout_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background:  #1f1a38;
+}
+
+.checkout_container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(230, 148, 77, 0.1);
+}
+
+.checkout_container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.checkout_container form .row .col{
+  flex:1 1 250px;
+}
+
+.checkout_container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+/* 
+.checkout_container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.checkout_container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.checkout_container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.checkout_container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.checkout_container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.checkout_container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.checkout_container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+} */
+
+.checkout_container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #1F1A38;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+
+.checkout_container form .submit-btn:hover{
+  background: #7b506f;
+}
